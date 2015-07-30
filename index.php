@@ -23,6 +23,9 @@ $signPackage=$jssdk->getSignPackage();
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -114,16 +117,20 @@ $signPackage=$jssdk->getSignPackage();
 
     <!-- foot area starts -->
 
-    <footer class="navbar navbar-fixed-bottom">
-        <div class="navbar-header" >
-            <a class="navbar-brand" href="#">WeWorld</a>
-        </div>
-        <div>
-            <ul class="nav navbar-nav">
+    <div class="bottom-menu container">
 
-            </ul>
+        <div class="row">
+
+            <button id="chooseImage" class="col-xs-6">
+                DIY背景图片
+            </button>
+
+
+            <button id="getImage" class="col-xs-6">
+                获取合成图片
+            </button>
         </div>
-    </footer>
+    </div>
     <!-- foot area ends -->
 
 
@@ -136,6 +143,43 @@ $signPackage=$jssdk->getSignPackage();
 
 <script>
 
+    wx.config({
+        debug: true,
+        appId: '<?php echo $signPackage["appId"];?>',
+        timestamp: <?php echo $signPackage["timestamp"];?>,
+        nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+        signature: '<?php echo $signPackage["signature"];?>',
+        jsApiList: [
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'chooseImage',
+            'previewImage',
+            'uploadImage',
+            'downloadImage']
+    });
+
+
+
+    wx.ready(function() {
+        wx.checkJsApi({
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'chooseImage',
+                'previewImage',
+                'uploadImage',
+                'downloadImage'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+            success: function (res) {
+                // 以键值对的形式返回，可用的api值true，不可用为false
+                // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+            }
+        });
+    });
+
+
+    wx.error(function(res){
+        alert(res.errMsg);
+    });
 
 
 </script>

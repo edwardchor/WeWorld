@@ -43,6 +43,7 @@ body{
 
 
 
+
     img{
         width: 100%;
     }
@@ -121,10 +122,37 @@ body{
         padding-left:8px;
     }
 
+    .bottom-menu{
+        position: fixed;
+        height: 70px;
+        width: 100% !important;
+        background-color: black;
+        margin-left: 0.4px;
+        bottom:0;
+        opacity:0.8;
 
+    }
+
+    #getImage{
+     /*   background-color:red;*/
+        z-index:10;
+        height:100%;
+        border:0px;
+        font-size:20px;
+        text-decoration-color:white;
+    }
+
+    #chooseImage{
+   /*     background-color:blue;*/
+        z-index:10;
+        height:100%;
+        border:0px;
+        font-size:20px;
+    }
 
     img{
        width: 100%;
+
     }
 }
 
