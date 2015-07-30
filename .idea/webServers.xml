@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b6830e8e-34a2-40b8-9161-9aa807ecf88c" name="WeWorld" url="http://203.195.129.33">
+        <fileTransfer host="203.195.129.33" port="22" rootFolder="/var/www/html" accessType="SFTP" password="dfe9dfd0dfd3df93df9fdf9cdf98df93" username="ubuntu">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

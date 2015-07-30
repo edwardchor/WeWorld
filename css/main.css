@@ -1,0 +1,151 @@
+@import "bootstrap-responsive.min.css";
+@import "font-awesome.min.css";
+
+label{
+    text-align: center;
+}
+
+body{
+    overflow:hidden;
+}
+
+
+
+@media only screen and (min-width:960px){
+    /* styles for browsers larger than 960px; */
+    .left-area{
+        margin-top:44%;
+        z-index:10;
+    }
+
+    .right-area{
+        margin-top:44%;
+        z-index:10;
+    }
+    .middle-area{
+
+    }
+
+    .workspace{
+        text-align: center;
+        height:auto;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .front{
+        position:absolute;
+        top:0;
+        bottom:0;
+        width:100%;
+    }
+
+
+
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-device-width:480px){
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+    .mainView{
+        margin-top:86px;
+    }
+
+
+    #lastFrontPic{
+        opacity: 0.3;
+        z-index: 0;
+    }
+    #currentFrontPic{
+        z-index:5;
+
+    }
+    #nextFrontPic{
+        opacity: 0.3;
+        z-index: 0;
+    }
+
+    .lastBackArea{
+        position: absolute;
+        left: 17px;
+        width: 99%;
+        top: -33.5%;
+        opacity: 0.3;
+    }
+
+    .nextBackArea{
+        opacity:0.3;
+    }
+
+    .left-area{
+        margin-top:44%;
+        z-index:10;
+    }
+
+    .right-area{
+        margin-top:44%;
+        z-index:10;
+    }
+    .middle-area{
+
+    }
+
+    .workspace{
+        text-align: center;
+        height:auto;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .front{
+        position: absolute;
+        left: -62.5%;
+        top: 11.3%;
+        bottom: 0;
+        width: 225%;
+    }
+
+    .back{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+    .navbar{
+        z-index:10 !important;
+        background-color:lightgray;
+        padding-left:8px;
+    }
+
+
+
+    img{
+       width: 100%;
+    }
+}
+
+
+@media only screen and (device-width:768px){
+    /* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+}
+/* For landscape layouts only */
+
+@media only screen and (min-width:2000px){
+    /* for sumo sized (mac) screens */
+}
+@media only screen and (min-width:1440px){
+    /* styles for browsers larger than 1440px; */
+
+}
