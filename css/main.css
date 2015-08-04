@@ -76,12 +76,18 @@ body{
         position: absolute;
         left: 17px;
         width: 99%;
-        top: -33.5%;
+        top: -330px;
         opacity: 0.3;
     }
 
+    .up-area{
+        height: 30px;
+    }
+
     .nextBackArea{
-        opacity:0.3;
+        opacity: 0.3;
+        position: relative;
+        top: 80px;
     }
 
     .left-area{
@@ -94,6 +100,8 @@ body{
         z-index:10;
     }
     .middle-area{
+        top: 20px;
+        position: relative;
 
     }
 
@@ -107,9 +115,9 @@ body{
     .front{
         position: absolute;
         left: -62.5%;
-        top: 11.3%;
+        top: 136px;
         bottom: 0;
-        width: 225%;
+        width: 225%;;
     }
 
     .back{
@@ -120,6 +128,11 @@ body{
         z-index:10 !important;
         background-color:lightgray;
         padding-left:8px;
+    }
+
+    .bottom-area{
+        position: relative;
+        top: 60px;
     }
 
     .bottom-menu{

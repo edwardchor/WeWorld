@@ -1,0 +1,1 @@
+http://file.api.weixin.qq.com/cgi-bin/media/get?access_token=Ar2ZbiA0NcbqTva3WvQ3LHqYP2-E0SZW6mwtItsg9sQfee6tVyplw1cloVPyP0P3uLd5qqLffTrLViWMG6BiTWSpczWyKZmoHScbUxGEfYQ&media_id=WqEHyQOBhrTrjf75qwuGWcwd2JQersT1s6kSeqjr7C3cPNpGQm8BljhwTyQSHGzn
